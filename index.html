@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootsrap/css/bootstrap.css" rel="stylesheet">
-  <script src="./bootsrap/js/bootstrap.js" ></script>
-    <title>First Bootstrap App</title>
+    <title>JS first page</title>
 </head>
+
 <body>
-  <div class="container  mx-auto">
-  <!-- <button class="btn btn-primary">Click me</button>
-  <h1>Grid system</h1> -->
-  <div class="row d-flex flex-row bg-primary text-white">
-  <div class="col">Column1 </div>
-  <div class="col">Column2 </div>
-  <div class="col">Column3 </div>
-  <div class="col">Column4 </div>
-  <div class="col">Column1 </div>
-  <div class="col">Column2 </div>
-  <div class="col">Column3 </div>
-  <div class="col">Column4 </div>
-  <div class="col">Column1 </div>
-  <div class="col">Column2 </div>
-  <div class="col">Column3 </div>
-  <div class="col">Column4 </div>
-  <div class="col">Column1 </div>
-  <div class="col">Column2 </div>
-  <div class="col">Column3 </div>
-  <div class="col">Column4 </div>
-</div>
-</div>
+    <p id="info"></p>
+    <!-- <button onclick="openURL();">Open URL</button>
+     <script>
+        function openURL(){
+            // window.open("https://www.google.com");
+            // document.location ="https://www.google.com";
+            // document.getElementById("info").innerHTML="<h1> Hello </h1>"
+            // document.getElementById("info").innerHTML=navigator.userAgent
+            // document.getElementById("info").innerHTML=navigator.appName
+            document.getElementById("info").innerHTML=navigator.appVersion
+        }
+     </script> -->
+
+    <button onmouseover="openURL();">Open URL</button>
+    <button id='alert'onclick="openURL();">Open alert</button>
+    <button id='msg'onclick="openURL();">Open msg</button>
+     <script>
+        function openURL(){
+            // window.open("https://www.google.com");
+            // document.location ="https://www.google.com";
+            // document.getElementById("info").innerHTML="<h1> Hello </h1>"
+            // document.getElementById("info").innerHTML=navigator.userAgent
+            // document.getElementById("info").innerHTML=navigator.appName
+            // document.getElementById("info").innerHTML=navigator.appVersion
+        }
+        const alertButton = document.getElementById('#alert');
+        alertButton.onclick=()=>{
+            alert("welcome to JS");
+        }
+        const msgButton=document.getElementById("msg");
+        msgButton.addEventListener("click",(event))=>{
+            alert("Ajay ");
+        }
+     </script>
+    
 </body>
-</html>
+</html>>
